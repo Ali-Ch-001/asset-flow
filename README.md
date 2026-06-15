@@ -1,4 +1,4 @@
-# Asset Flow — Trial Site (try branch)
+# Asset Flow — Trial Site (No longer being Maintained)
 
 ## Trial Purpose
 
@@ -7,7 +7,7 @@ Use this branch to:
 - Test new UI flows and features without affecting production.
 - Verify API changes and integration points.
 - Validate accessibility and responsive behavior.
-- Deploy preview instances (Vercel/Netlify) for stakeholder review.
+- Deploy preview instances (Vercel/Netlify) for stakeholder content review.
 
 ---
 
@@ -110,3 +110,5 @@ This branch is experimental — open pull requests against `try` for trial featu
 Maintainer: Ali (owner: Ali-Ch-001)
 
 ---
+
+
