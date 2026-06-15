@@ -112,5 +112,3 @@ This branch is experimental — open pull requests against `try` for trial featu
 Maintainer: Ali (owner: Ali-Ch-001)
 
 ---
-
-*This README was updated for the trial site on the `try` branch.*
