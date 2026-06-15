@@ -1,7 +1,5 @@
 # Asset Flow — Trial Site (try branch)
 
-> This is the trial / preview version of Asset Flow. The `try` branch hosts experimental changes and a working preview for testing features before merging into the main branch.
-
 ## Trial Purpose
 
 Use this branch to:
