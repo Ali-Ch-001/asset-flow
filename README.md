@@ -1,6 +1,21 @@
+# Asset Flow — Trial Site (try branch)
+
+> This is the trial / preview version of Asset Flow. The `try` branch hosts experimental changes and a working preview for testing features before merging into the main branch.
+
+## Trial Purpose
+
+Use this branch to:
+
+- Test new UI flows and features without affecting production.
+- Verify API changes and integration points.
+- Validate accessibility and responsive behavior.
+- Deploy preview instances (Vercel/Netlify) for stakeholder review.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Getting Started (Local)
 
 First, run the development server:
 
@@ -18,19 +33,84 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load fonts.
 
-## Learn More
+## Features to Try
 
-To learn more about Next.js, take a look at the following resources:
+- Basic asset listing and viewing
+- Create / edit / delete asset flows (if available in UI)
+- Authentication (trial/demo credentials or local auth)
+- API endpoints for assets and flows
+- Frontend responsiveness and accessibility checks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Node.js 16+ (or later LTS)
+- npm, yarn, or pnpm
+- (Optional) Docker for containerized setups
 
-## Deploy on Vercel
+## Environment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Copy `.env.example` to `.env` and update values as needed. Typical variables include:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- PORT
+- DATABASE_URL
+- NODE_ENV
+- API_URL
+- AUTH_SECRET
+
+## Running Locally (Detailed)
+
+1. Clone the repo and checkout the `try` branch:
+
+   git clone https://github.com/Ali-Ch-001/asset-flow.git
+   cd asset-flow
+   git checkout try
+
+2. Install dependencies:
+
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+
+3. Configure environment variables (see above).
+
+4. Start the dev server:
+
+   npm run dev
+
+5. Open http://localhost:3000 (or the port from `.env`).
+
+## Running Tests
+
+If the project includes tests, run:
+
+```bash
+npm test
+# or
+yarn test
+```
+
+Add or update tests to cover any trial features you are evaluating.
+
+## Deployment (Trial Previews)
+
+Use the `try` branch for preview deployments on Vercel, Netlify, or a staging server. Configure the hosting service to build from the `try` branch so stakeholders can review the changes.
+
+## Feedback & Issues
+
+File issues in this repository for any bugs or improvements discovered while testing. Use clear titles and reproduction steps. Tag issues with `try` or `preview` where appropriate.
+
+## Contributing
+
+This branch is experimental — open pull requests against `try` for trial features. Include description, testing notes, and screenshots/videos where helpful.
+
+## Contact
+
+Maintainer: Ali (owner: Ali-Ch-001)
+
+---
+
+*This README was updated for the trial site on the `try` branch.*
